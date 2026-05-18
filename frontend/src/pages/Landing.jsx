@@ -125,7 +125,7 @@ export default function Landing() {
 
       <footer className="border-t-2 border-black bg-white py-6">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between text-sm">
-          <div className="font-bold">© Lumen.Study</div>
+          <div className="font-bold">© StudyMatch</div>
           <div className="text-gray-600">Crafted for late-night learners</div>
         </div>
       </footer>

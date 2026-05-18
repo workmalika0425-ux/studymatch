@@ -17,7 +17,7 @@ export default function Navbar() {
           <div className="w-9 h-9 rounded-lg bg-brand-yellow border-2 border-black flex items-center justify-center shadow-brutalSm">
             <BookOpenCheck strokeWidth={2.5} className="w-5 h-5" />
           </div>
-          <div className="font-heading font-black text-xl tracking-tight">Lumen<span className="text-pink-500">.</span>Study</div>
+          <div className="font-heading font-black text-xl tracking-tight">Study<span className="text-pink-500">·</span>Match</div>
         </Link>
 
         {user && (

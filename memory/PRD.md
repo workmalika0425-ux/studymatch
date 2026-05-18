@@ -1,4 +1,4 @@
-# Lumen.Study — PRD
+# StudyMatch — PRD
 
 ## Original problem statement
 A collaborative web app for students to create and join virtual study rooms with

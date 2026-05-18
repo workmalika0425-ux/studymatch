@@ -633,7 +633,7 @@ async def ai_recommend(payload: AIRecommendRequest, user: dict = Depends(get_cur
         api_key=key,
         session_id=f"reco-{user['user_id']}",
         system_message=(
-            "You are a friendly AI study coach for the Lumen Study Rooms app. "
+            "You are a friendly AI study coach for the StudyMatch app. "
             "Given a learner's interests and goal plus a list of available public study rooms, "
             "you recommend 2-3 rooms that fit best and write a short motivating note. "
             "Respond ONLY with strict JSON of shape: "
