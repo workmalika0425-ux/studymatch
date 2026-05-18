@@ -122,6 +122,8 @@ async def get_current_user(request: Request, session_token: Optional[str] = Cook
         raise HTTPException(status_code=401, detail="Invalid session")
 
     expires_at = sess.get("expires_at")
+    if not expires_at:
+        raise HTTPException(status_code=401, detail="Session expired")
     if isinstance(expires_at, str):
         expires_at = datetime.fromisoformat(expires_at)
     if expires_at.tzinfo is None:
