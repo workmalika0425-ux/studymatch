@@ -1,0 +1,94 @@
+{
+  "project_name": "Virtual Study Room MVP",
+  "theme_and_archetype": {
+    "theme": "Light",
+    "archetype": "Archetype 3 (Pastel & Soft) + Neo-Brutalist Twist",
+    "vibe": "A focused, motivating, and highly tactile environment. Avoid the standard 'boring SaaS' look. Use Neo-Brutalism (thick 2px black borders, offset solid shadows, flat pastel blocks) to make the app feel like a premium Japanese stationery planner mixed with a cozy lofi cafe."
+  },
+  "colors": {
+    "background": "#FFFDF8",
+    "surface": "#FFFFFF",
+    "text_primary": "#0A0A0A",
+    "text_secondary": "#4B5563",
+    "primary_yellow": "#FFE072",
+    "primary_mint": "#A7F3D0",
+    "accent_pink": "#FBCFE8",
+    "accent_lavender": "#E9D5FF",
+    "border": "#000000",
+    "focus_mode_bg": "#121212",
+    "focus_mode_text": "#E5E5E5"
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Cabinet Grotesk, sans-serif",
+      "body": "Satoshi, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "rules": {
+      "h1": "text-5xl md:text-6xl font-black tracking-tighter text-black",
+      "h2": "text-3xl md:text-4xl font-bold tracking-tight text-black",
+      "h3": "text-xl md:text-2xl font-bold text-black",
+      "body": "text-base leading-relaxed text-[#0A0A0A]",
+      "labels": "text-xs font-bold uppercase tracking-[0.1em] text-[#4B5563]"
+    }
+  },
+  "layout_and_spacing": {
+    "philosophy": "Generous spacing. Use p-6 or p-8 inside cards to let content breathe.",
+    "dashboard_grid": "Bento style: grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+    "study_room_grid": "Grid-cols-1 lg:grid-cols-12 gap-6. Video/Presence spans 8 cols. Side panel (Chat/Timer/Tasks) spans 4 cols."
+  },
+  "components": {
+    "card_base": "bg-white border-2 border-black rounded-xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]",
+    "card_hover": "hover:-translate-y-1 hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] transition-all duration-200",
+    "button_primary": "bg-[#FFE072] text-black border-2 border-black rounded-lg px-6 py-3 font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-y-[4px] active:translate-x-[4px] transition-all",
+    "button_secondary": "bg-[#A7F3D0] text-black border-2 border-black rounded-lg px-6 py-3 font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-y-[2px] hover:translate-x-[2px] hover:shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] transition-all",
+    "input": "bg-white border-2 border-black rounded-lg px-4 py-3 focus:outline-none focus:ring-0 focus:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-shadow placeholder:text-gray-400 font-medium",
+    "badges": {
+      "studying": "bg-[#A7F3D0] border-2 border-black rounded-full px-3 py-1 text-xs font-bold text-black",
+      "break": "bg-[#FFE072] border-2 border-black rounded-full px-3 py-1 text-xs font-bold text-black",
+      "doubt": "bg-[#FBCFE8] border-2 border-black rounded-full px-3 py-1 text-xs font-bold text-black"
+    }
+  },
+  "media_urls": {
+    "hero_background": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/a5ed4640-ac32-42ac-99d5-52bfc7ea0563/images/a764712be1d9e9d110a1ffc83fc0685f81522444afff40b9eb939810be958ba9.png",
+      "description": "Neo-brutalist pastel abstract background for landing page accents or auth screens."
+    },
+    "lofi_study_room": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/a5ed4640-ac32-42ac-99d5-52bfc7ea0563/images/c22d6c87cc38f89f0126b26f81bfb3e88f68b4d01108471c4a0b24522da070b8.png",
+      "description": "Aesthetic lofi study room. Use as the main hero image or 'Explore' section header. Give it a 2px black border and shadow."
+    },
+    "pomodoro_icon": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/a5ed4640-ac32-42ac-99d5-52bfc7ea0563/images/607bd7944ddb2919b4bda3c8dccc4d4b734ec991a8d921e4fb32ec2f48c578c5.png",
+      "description": "Playful 3D Pomodoro timer illustration. Display alongside the shared timer widget in the study room."
+    },
+    "focus_mode_ambient": {
+      "url": "https://static.prod-images.emergentagent.com/jobs/a5ed4640-ac32-42ac-99d5-52bfc7ea0563/images/c3978bf002e1be45cd68609ada17cbd09d4c635b791e1ed242877efed08f4a4a.png",
+      "description": "Cozy rain window background. When 'Focus Mode' is ON, crossfade the app background to this image and dim the UI."
+    },
+    "student_avatars": {
+      "description": "Use these for participant lists, leaderboards, and user profiles.",
+      "urls": [
+        "https://images.unsplash.com/photo-1562931715-536816af4a8a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwzfHxzdHVkZW50JTIwc3R1ZHlpbmclMjBjYWZlfGVufDB8fHx8MTc3OTA5ODUyNXww&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1535688391459-479d308104f8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwc3R1ZHlpbmclMjBjYWZlfGVufDB8fHx8MTc3OTA5ODUyNXww&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1483808161634-29aa1b0e585e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwyfHxzdHVkZW50JTIwc3R1ZHlpbmclMjBjYWZlfGVufDB8fHx8MTc3OTA5ODUyNXww&ixlib=rb-4.1.0&q=85",
+        "https://images.unsplash.com/photo-1488751045188-3c55bbf9a3fa?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHw0fHxzdHVkZW50JTIwc3R1ZHlpbmclMjBjYWZlfGVufDB8fHx8MTc3OTA5ODUyNXww&ixlib=rb-4.1.0&q=85"
+      ]
+    }
+  },
+  "specific_page_guidelines": {
+    "landing_page": "High visual impact. Bold H1 with tracking-tighter. Use lofi_study_room image prominently with the neo-brutalist card styling. CTAs should be massive (text-lg or xl, thick borders).",
+    "dashboard": "Display Active Rooms, Study Hours, and Streaks in 3 distinct pastel cards (yellow, mint, lavender). Include AI-powered recommendations widget below.",
+    "study_room_view": "Bento Grid: 8-col section for Video/Avatars. 4-col section for Chat/Timer/Tasks. Toggle for 'Focus Mode'. Include badges on avatars for (Studying / Break / Doubt).",
+    "focus_mode": "When active, enter dark mode styling (#121212), use focus_mode_ambient as a dimmed background cover, hide chat, and expand timer/task list. Add subtle CSS animation to the timer."
+  },
+  "instructions_to_main_agent": [
+    "CRITICAL: Write all React components in .js/.jsx, NOT .tsx. Provide PropTypes if needed, but do not use TypeScript.",
+    "CRITICAL: ALWAYS include data-testid attributes on all interactive and key elements.",
+    "CRITICAL: Do not use generic SaaS blue colors. Use the exact pastel hex codes provided.",
+    "CRITICAL: Override Shadcn UI defaults. Ensure components (inputs, dialogs, cards) use the 2px solid black border and offset shadow defined in components.",
+    "Use lucide-react for icons, but set strokeWidth to 2.5 or 3 to match the bold neo-brutalist lines.",
+    "Never use placeholder images (via.placeholder.com). Use ONLY the media_urls provided.",
+    "Use Framer Motion for micro-interactions, especially the button press effect (scale: 0.98)."
+  ]
+}
