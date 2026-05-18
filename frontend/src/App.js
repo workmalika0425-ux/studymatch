@@ -13,7 +13,7 @@ import Profile from "@/pages/Profile";
 
 function AppRouter() {
   const location = useLocation();
-  // Handle Emergent auth redirect: URL fragment contains session_id
+  // Handle OAuth redirect: URL fragment contains session_id
   if (location.hash?.includes("session_id=")) {
     return <AuthCallback />;
   }

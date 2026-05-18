@@ -10,8 +10,8 @@ recommendations, leaderboards, ambient sounds, and dashboard with streaks.
   custom Neo-Brutalist design (Cabinet Grotesk / Satoshi fonts), recharts for
   charts, sonner for toasts.
 - Backend: FastAPI + MongoDB (motor). All routes under `/api`.
-- Auth: Emergent-managed Google OAuth (session_token cookie + bearer fallback).
-- AI: Claude Sonnet 4.5 via `emergentintegrations` (EMERGENT_LLM_KEY).
+- Auth: Google OAuth (session_token cookie + bearer fallback).
+- AI: Claude Sonnet 4.5 for room recommendations.
 
 ## What's implemented (Feb 2026 — v1)
 - Landing page with Google login CTA

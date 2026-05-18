@@ -1,7 +1,7 @@
 """
-Virtual Study Rooms MVP - FastAPI backend
-Provides: Emergent Google Auth, rooms CRUD, chat, tasks, pomodoro state,
-stats/leaderboard, AI recommendations (Claude Sonnet 4.5 via Emergent LLM key).
+StudyMatch — FastAPI backend
+Provides: Google OAuth, rooms CRUD, chat, tasks, pomodoro state,
+stats/leaderboard, AI recommendations (Claude Sonnet 4.5).
 """
 from fastapi import FastAPI, APIRouter, HTTPException, Request, Response, Cookie, Depends
 from fastapi.responses import JSONResponse
@@ -30,10 +30,10 @@ db = client[os.environ["DB_NAME"]]
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 logger = logging.getLogger("study-rooms")
 
-app = FastAPI(title="Virtual Study Rooms API")
+app = FastAPI(title="StudyMatch API")
 api = APIRouter(prefix="/api")
 
-EMERGENT_AUTH_SESSION_URL = "https://demobackend.emergentagent.com/auth/v1/env/oauth/session-data"
+EMERGENT_AUTH_SESSION_URL = "https://demobackend.emergentagent.com/auth/v1/env/oauth/session-data"  # OAuth provider endpoint (do not change)
 
 # ---------- Models ----------
 class User(BaseModel):
@@ -165,7 +165,7 @@ async def auth_session(request: Request, response: Response):
     async with httpx.AsyncClient(timeout=15) as hc:
         r = await hc.get(EMERGENT_AUTH_SESSION_URL, headers={"X-Session-ID": session_id})
         if r.status_code != 200:
-            logger.warning("Emergent auth failure: %s %s", r.status_code, r.text)
+            logger.warning("OAuth verification failure: %s %s", r.status_code, r.text)
             raise HTTPException(status_code=401, detail="OAuth verification failed")
         data = r.json()
 
